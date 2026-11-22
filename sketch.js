@@ -124,6 +124,7 @@ function mouseReleased(){
 }
 function keyPressed(){
   if(keyCode === 32){
-    slingShot.attach(this.polygon)
+    Matter.Body.setPosition(ball,{x:100,y:200});
+    slingShot.attach(ball)
   }
 }
